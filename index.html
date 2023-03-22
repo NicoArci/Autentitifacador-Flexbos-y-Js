@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio Autentificador</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <section class="logo">
+        <a href="index.html">
+          <img
+            width="70"
+            height="69"
+            src="assets/image/logoAA.png"
+            alt="logo Gym"
+          />
+        </a>
+      </section>
+      <section class="menu">
+        <div class="cont_menu">
+          <ul>
+            <li><a href="#" target="_blank">Quienes Somos?</a></li>
+            <li><a href="#" target="_blank">Contactenos</a></li>
+            <li><a href="#" target="_blank">Otros Servicios</a></li>
+          </ul>
+        </div>
+      </section>
+    </header>
+    <section class="banner">
+        <div class="titulo"><h1>Servicio de Autentificacion</h1></div>
+        <img src="assets/image/CaraRoma.png" alt="Imagen Coliseo" class="img_banner">
+    </section>
+    <section class="autentificador">
+      <div class="cont_autentificador">
+        <table>
+          <tr>
+            <td colspan="2">Ingrese sus Datos</td>
+          </tr>
+          <tr>
+            <td>
+              <label for="user"
+                >Usuario: <br /><input type="text" name="user" id="txt_usuario"
+              /></label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="contraseña"
+                >Contraseña: <br />
+                <input type="password" name="user" id="txt_contraseña"
+              /></label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                class="btn_tbl_autent"
+                type="button"
+                value="Cambio de contraseña"
+                name="btnChangePW"
+                id="btn_changepw"
+                onclick="changepw()"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                class="btn_tbl_autent"
+                type="button"
+                value="Autentificar"
+                name="btnautentifica"
+                id="btn_autentifica"
+                onclick="autentificar()"
+              />
+            </td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <footer>
+      &copy; Desarrollada por Nicolás Arciniegas 2023 en BIT - Bogotá Institute
+      of Technology
+    </footer>
+    <script src="src/main.js"></script>
+  </body>
+</html>
