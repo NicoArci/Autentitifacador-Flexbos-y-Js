@@ -1,3 +1,7 @@
+
+
+
+
 var password = 1234;
 
 function autentificar() {
@@ -6,7 +10,9 @@ function autentificar() {
 
   if (usuario == "Nicolas" && contraseña == password) {
     alert("usuario y contraseña validos");
-  } 
+  } else{
+    alert("Verifique sus datos")
+  }
 }
 
 function changepw() {
@@ -17,12 +23,10 @@ function changepw() {
 var count = 0;
 var btn = document.getElementById("btn_autentifica")
 
-btn.onclick = function(){
+function contador(){
   count++;
   if(count>=4){
     alert("Cuenta bloqueada")
-  }else{
-    alert("Verifique sus datos")
   }
   
 }
